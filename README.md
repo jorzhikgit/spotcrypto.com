@@ -1,0 +1,2 @@
+# spotcrytpo.com
+Spot Crypto
