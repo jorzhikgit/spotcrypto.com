@@ -2,17 +2,8 @@
 <div class="row">
 	<div class="col-md-8">
 	<h4>To send Fiat (paper/cash currency) you wire transfer funds to</h4>
-<p>Bank La Caixa</p>
-
-<p>Avenida Jaime 1,nr 60,03750 Pedreguer, Spain</p>
-
-<p>IBAN: ES49 2100 4608 1222 0010 9432</p>
-
-<p>SWIFT/BIC: CAIXESBBXXX</p>
-
-<p>Account Name: Sabrina Investments Inc</p>
-
-<p>Reference: siiCrypto-[AccountNumber]-[username]</p>
+	<?=BANK_DETAILS?>
+<p>Reference: <?=COMPANY_SHORT?>-[AccountNumber]-[username]</p>
 	
 <blockquote><strong>Deposit and Withdrawal fees</strong></p>
 <ul>Bank charges are as following:

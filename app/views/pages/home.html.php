@@ -128,10 +128,10 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 		</div>
 
 		<h2 style="text-align:center">EXCHANGE GREENCOINX FOR EURO, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</h2>
-		<p style="text-align:center;font-size:18px"><strong>SiiCrypto – a crypto currency exchange specializing in GreenCoinX the world’s first identifiable crypto currency</strong></p>
+		<p style="text-align:center;font-size:18px"><strong><?=COMPANY_SHORT?> – a crypto currency exchange specializing in GreenCoinX the world’s first identifiable crypto currency</strong></p>
 		</div>
 	<div class="col-xs-12 col-sm-4">
-		<!-- <a class="twitter-timeline"  href="https://twitter.com/SIICrypto"  data-widget-id="aaaaaaaaaaaaaaaaaaaa">Tweets by @SIICrypto</a> -->
+		<!-- <a class="twitter-timeline"  href="https://twitter.com/<?=COMPANY_SHORT?>"  data-widget-id="">Tweets by @<?=COMPANY_SHORT?></a> -->
 		</div>
 	
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

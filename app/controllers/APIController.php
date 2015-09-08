@@ -32,12 +32,9 @@ class APIController extends \lithium\action\Controller {
 		));
 		Requests::create()->save($data);
 		
-		if($_SERVER['REMOTE_ADDR']=='198.50.222.223'){return true;}
-		if($_SERVER['REMOTE_ADDR']=='107.20.80.120'){return true;}		
-		if($_SERVER['REMOTE_ADDR']=='178.62.83.36'){return true;}		//bittybot.co.uk
 		if($_SERVER['REMOTE_ADDR']=='107.6.11.150'){return true;}		//GreenCoinX.com
 		if($_SERVER['REMOTE_ADDR']=='127.0.0.1'){return true;}		//GreenCoinX.com		
-		if($_SERVER['REMOTE_ADDR']=='107.6.11.211'){return true;}		//SiiCrypto.com
+
 		if(in_array($username,array(
 		"SiiUserA","SiiUserB"
 		))){return true;}

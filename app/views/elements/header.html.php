@@ -11,7 +11,7 @@ use app\extensions\action\Functions;
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="/"><img src="/img/logo.png" alt="SiiCrypto.com" title="SII Crypto"></a>
+	<a class="navbar-brand" href="/"><img src="/img/logo.png" alt="<?=COMPANY_URL?>" title="<?=COMPANY_SHORT?>"></a>
 </div> <!-- navbar-header-->
 <div class="navbar-collapse collapse">
 	<?php 

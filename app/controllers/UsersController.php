@@ -663,10 +663,10 @@ class UsersController extends \lithium\action\Controller {
 			$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 				
 			if($details[$currency.'newaddress']=="" || $details[$currency.'newaddress']=="Yes"){
-				$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+				$address = $greencoin->getnewaddress(COMPANY_SHORT.$user['username']);
 			}else{
 				if($details['greencoinaddress'][0]==""){
-					$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+					$address = $greencoin->getnewaddress(COMPANY_SHORT.$user['username']);
 				}else{
 					$address = $details['greencoinaddress'][0];
 				}
@@ -964,7 +964,7 @@ class UsersController extends \lithium\action\Controller {
 			$message = Swift_Message::newInstance();
 			$message->setSubject($currency." Admin Approval from ".COMPANY_URL);
 			$message->setFrom(array(NOREPLY => $currency.' Admin Approval email '.COMPANY_URL));
-			$message->setTo('admin@SiiCrypto.com');
+			$message->setTo('admin@'.COMPANY_URL);
 			$message->addBcc(MAIL_1);
 			$message->addBcc(MAIL_2);			
 			$message->addBcc(MAIL_3);		
@@ -1000,7 +1000,7 @@ class UsersController extends \lithium\action\Controller {
 					'password' => String::hash($password),
 					)
 			));
-			$pos = strrpos($useradmin['email'], 'SiiCrypto.com');
+			$pos = strrpos($useradmin['email'], COMPANY_URL);
 			if ($pos === false) { // note: three equal signs
    return $this->redirect(array('controller'=>'users','action'=>'paymentadminconfirm/'.$currency.'/'.$verify));
 			}

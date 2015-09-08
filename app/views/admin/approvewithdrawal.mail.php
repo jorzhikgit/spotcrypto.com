@@ -26,5 +26,5 @@
 <?=NOREPLY?></p>
 
 <p>P.S. Please do not reply to this email. </p>
-<p>If you did not initiate this action please contact SiiCrypto.com as soon as possible via support@SiiCrypto.com.</p>
+<p>If you did not initiate this action please contact <?=COMPANY_URL?> as soon as possible via support@<?=COMPANY_URL?>.</p>
 <p>We do not spam. </p>

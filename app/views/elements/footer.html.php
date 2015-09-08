@@ -1,6 +1,6 @@
 <div class="row container" style="width:100%;padding:10px">
  <p>&nbsp;</p><hr class="half-rule"><p>&nbsp;</p>
-	<h4 class="nav navbar-nav"><small style="font-size:11px;">Copyright &copy; Sabrina Investments Inc. All rights reserved.</small></h4>
+	<h4 class="nav navbar-nav"><small style="font-size:11px;">Copyright &copy; <?=COMPANY_NAME?>. All rights reserved.</small></h4>
 </div>
 <div class="row container"  style="width:100%;font-size:11px;border-top:1px solid gray;border-bottom:double">
 	<ul class="nav navbar-nav" >
@@ -17,7 +17,7 @@
 </div>
 <div class="row container">
 	<p>
-		<small style="font-size:11px;">SiiCrypto is a business name of <strong>Sabrina Investments Inc.</strong></small>
+		<small style="font-size:11px;"><?=COMPANY_SHORT?> is a business name of <strong><?=COMPANY_NAME?>.</strong></small>
 	</p>
 </div>
 <script>

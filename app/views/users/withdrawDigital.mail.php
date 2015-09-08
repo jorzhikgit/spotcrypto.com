@@ -7,7 +7,7 @@
 <p>If you did not authorize this withdrawal to the address: <strong><?=$data['address']?></strong> please <strong style="color:#FF0000">do not</strong> click on the link.</p>
 <a href="https://<?=COMPANY_URL?>/users/paymentconfirm/<?=$data['Currency']?>/<?=$data['verify.payment']?>">https://<?=COMPANY_URL?>/users/paymentconfirm/<?=$data['Currency']?>/<?=$data['verify.payment']?></a>
 
-<p>You will be asked for your main password on the page following the link to authorize the transfer. This is an added security feature SiiCrypto.com employs to secure your coins from hackers / spammers.</p>
+<p>You will be asked for your main password on the page following the link to authorize the transfer. This is an added security feature <?=COMPANY_SHORT?> employs to secure your coins from hackers / spammers.</p>
 
 <p>Thanks,<br>
 <?=NOREPLY?></p>

@@ -30,6 +30,6 @@ foreach($details as  $d){
 		<p>
 </ul>
 </p>
-<p>If your bank is not listed, do not worry, please contact us via support@SiiCrypto.com and we will confirm whether or not your bank falls within our locality.</p>
+<p>If your bank is not listed, do not worry, please contact us via support@<?=COMPANY_URL?> and we will confirm whether or not your bank falls within our locality.</p>
 	</div>
 </div>

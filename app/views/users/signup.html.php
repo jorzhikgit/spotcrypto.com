@@ -72,7 +72,7 @@ $Comm = Parameters::find('first');
 				<h3 class="panel-title">Advantages</h3>
 			</div>
 		</div>
-		<h3>Sabrina Investments Inc. SiiCrypto.com</h3>
+		<h3><?=COMPANY_NAME?>. <?=COMPANY_URL?></h3>
 		<ul>
 			<li>Fees are <strong><?=$Comm['value']?></strong>% per transaction.</li>
     	<li>Crypto coins stored on Cold Storage, SSL and 256bit encryption.</li>
@@ -81,7 +81,7 @@ $Comm = Parameters::find('first');
 
 		</ul>
 
-<p>To become an SiiCrypto.com customer and use our platform and services, you only need the following;
+<p>To become an <?=COMPANY_URL?> customer and use our platform and services, you only need the following;
 <ul>
     <li>To trade with BTC/XGC - registered & verified email.</li>
     <li>To deposit fiat currency - registered & verified email.</li>
@@ -96,7 +96,7 @@ $Comm = Parameters::find('first');
 
 </ul>		
 </p>
-Any issues please contact us at <a href="mailto:support@siiCrypto.com">support@siiCrypto.com</a>
+Any issues please contact us at <a href="mailto:support@<?=COMPANY_URL?>">support@<?=COMPANY_URL?></a>
 </p>
 		</div>
 	</div>

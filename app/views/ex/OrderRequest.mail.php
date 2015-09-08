@@ -21,8 +21,8 @@
 		<td><?=number_format($order['PerPrice']*$order['Amount'],8);?></td>		
 	</tr>
 </table>
-<p>To view your order please sign in to https://SiiCrypto.com. </p>
-<p>If you did not place this order then please contact us at support@SiiCrypto.com.</p>
+<p>To view your order please sign in to https://<?=COMPANY_URL?>. </p>
+<p>If you did not place this order then please contact us at support@<?=COMPANY_URL?>.</p>
 
 <p>Thank you,</p>
 <p>Support</p>

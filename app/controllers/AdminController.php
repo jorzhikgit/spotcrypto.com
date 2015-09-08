@@ -1368,7 +1368,7 @@ $ex = new ExController();
 				array( '$match' => array( 
 					'DateTime'=> array( '$gte' => $StartDate, '$lte' => $EndDate ),
 					'Completed'=>'Y',
-					'username'=>array('$nin'=>array('SiiCrypto.comUserA','SiiCrypto.comUserB','SiiCrypto.comUserC','SiiCrypto.comUserD'))
+					'username'=>array('$nin'=>array('comUserA','comUserB','comUserC','comUserD'))
 					 )),
 				array('$group' => array( '_id' => array(
 					'CommissionCurrency'=>'$CommissionCurrency',					
@@ -1562,7 +1562,7 @@ $description = "Admin panel for Orders";
 	public function play(){
 		$details = Details::find('all',array(
 			'conditions'=>array(
-				'username'=>array('$regex'=>'SiiCrypto.comUser'),
+				'username'=>array('$regex'=>'comUser'),
 			)
 		));
 		$trades = Trades::find('all');

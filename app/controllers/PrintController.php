@@ -16,7 +16,7 @@ class PrintController extends \lithium\action\Controller {
 	}
 	public function cold() {
 
-			$email = "support@SiiCrypto.com";
+			$email = "support@".COMPANY_URL;
 
 if ($handle = opendir(VANITY_OUTPUT_DIR)) {
     while (false !== ($entry = readdir($handle))) {

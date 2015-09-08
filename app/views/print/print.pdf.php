@@ -14,7 +14,7 @@ $this->Pdf->setCustomLayout(array(
         $pdf->Ln();
     },
     'footer'=>function() use($pdf){
-        $footertext = sprintf('Copyright © %d https://SiiCrypto.com. All rights reserved.', date('Y')); 
+        $footertext = sprintf('Copyright © %d https://'.COMPANY_URL.'. All rights reserved.', date('Y')); 
         $pdf->SetY(-10); 
         $pdf->SetTextColor(0, 0, 0); 
         $pdf->SetFont(PDF_FONT_NAME_MAIN,'', 8); 
@@ -25,11 +25,11 @@ $this->Pdf->setCustomLayout(array(
 
 $pdf->SetHeaderMargin(0);
 $pdf->SetFooterMargin(0);
-$pdf->SetAuthor('https://SiiCrypto.com');
-$pdf->SetCreator('support@SiiCrypto.com');
-$pdf->SetSubject('In Bitcoin We Trust, Print ');
-$pdf->SetKeywords('SiiCrypto.com, Print');
-$pdf->SetTitle('https://SiiCrypto.com');
+$pdf->SetAuthor('https://'.COMPANY_URL);
+$pdf->SetCreator('support@'.COMPANY_URL);
+$pdf->SetSubject(COMPANY_NAME', Print ');
+$pdf->SetKeywords(COMAPNY_URL', Print');
+$pdf->SetTitle('https://'.COMAPNY_URL);
 
 
 $pdf->SetAutoPageBreak(true);

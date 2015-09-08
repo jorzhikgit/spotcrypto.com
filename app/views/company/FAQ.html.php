@@ -6,7 +6,7 @@ $Comm = Parameters::find('first');
 
 <p><strong><u>Become a Customer</u></strong></p>
 
-<blockquote>To become an SiiCrypto customer please click <a href="/users/signup">signup</a>. Registration implies you have read and agreed to our <a href="/company/termsofservice">Terms of Service.</a>
+<blockquote>To become an <?=COMPANY_SHORT?> customer please click <a href="/users/signup">signup</a>. Registration implies you have read and agreed to our <a href="/company/termsofservice">Terms of Service.</a>
 </blockquote>
 <p><strong><u>Fees</u></strong></p>
 <blockquote><ul>
@@ -37,7 +37,7 @@ Account name: <strong>silent bob</strong><br>
 Reference number: <strong>15828481</strong><br>
 Amount: <strong>$xxxx</strong><br>
 </ul>  
-<span>When we receive your funds we verify with your deposit request and credit your SiiCrypto.com account the amount.</span><br>
+<span>When we receive your funds we verify with your deposit request and credit your <?=COMPANY_SHORT?> account the amount.</span><br>
 <br>
 <p><strong>Deposits</strong></p>
 <span>Once fiat amounts are received your account gets credited the same amount, just the same as doing a bank transfer, without the bank.</span><br>
@@ -45,8 +45,8 @@ Amount: <strong>$xxxx</strong><br>
 <p><strong>Withdrawals</strong></p>
 <ul>
 <li>We charge customers the relevant fee that Royal Mail charges to cover the withdrawal amount respectively.</li>
-<li>This charge is made to your SiiCrypto.com account.</li>
-<li>If you do not have enough to cover the Royal Mail fee in your SiiCrypto.com account then your withdrawal will not be processed and you will be notified via email.</li>
+<li>This charge is made to your <?=COMPANY_SHORT?> account.</li>
+<li>If you do not have enough to cover the Royal Mail fee in your <?=COMPANY_SHORT?> account then your withdrawal will not be processed and you will be notified via email.</li>
 <li>We store all fiat via safety deposit box services.</li>
 </ul>
 </blockquote>
@@ -56,7 +56,6 @@ Amount: <strong>$xxxx</strong><br>
 <ul >
 <li>Transfers are only processed weekdays, barring bank holidays.</li>
 <li>It can take us up to 24 hours to verify, confirm and start the process for your withdrawal requests.</li>
-<li>It can then take Royal Mail 1-3 days to deliver your withdrawal (we always use 1st Class).</li>
 </ul>
 <u>Bitcoin</u>
 <ul ><li>Bitcoin deposits and withdrawals are subject to the Bitcoin protocol.</li></ul>
@@ -66,11 +65,11 @@ Amount: <strong>$xxxx</strong><br>
 <blockquote>
 
 <ul >
-<li>SiiCrypto employs two factor authentication (2FA) and time-based one-time password algorithm (TOTP), for login, withdrawals, deposits and settings.</li>
+<li><?=COMPANY_SHORT?> employs two factor authentication (2FA) and time-based one-time password algorithm (TOTP), for login, withdrawals, deposits and settings.</li>
 
 <li>We also require a level of identification for all customers as per our (link) verification page, and run random security checks on accounts. Any information found to be out of date may result in the account in question to be temporarily suspended until such information is suitably updated.</li>
 
-<li>If you have any issues please contact SiiCrypto.com at <a href="mailto:support@SiiCrypto.com ">support@SiiCrypto.com</a></li>
+<li>If you have any issues please contact <?=COMPANY_SHORT?> at <a href="mailto:support@<?=COMPANY_URL?> ">support@<?=COMPANY_URL?></a></li>
 
 </ul>
 </blockquote>

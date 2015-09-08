@@ -2,7 +2,7 @@
 
 ?>
 
-<p class="alert alert-danger" id="LoginAlert">SiiCrypto.com: <strong><a href="/users/signup" >Registration is FREE!</a></strong></p>
+<p class="alert alert-danger" id="LoginAlert"><?=COMPANY_URL?>: <strong><a href="/users/signup" >Registration is FREE!</a></strong></p>
 <div class="row container-fluid">
 	<div class="col-md-6 well" >
 		

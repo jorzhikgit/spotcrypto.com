@@ -6,10 +6,10 @@ var <?=$detail['username']?> = "<?=$detail['key']?>";
 <?php }
 ?>
 function DisableUser(username){
-	$("#SecondUser option[value='SiiCrypto.comUserA']").attr('disabled',false);
-	$("#SecondUser option[value='SiiCrypto.comUserB']").attr('disabled',false);	
-	$("#SecondUser option[value='SiiCrypto.comUserC']").attr('disabled',false);	
-	$("#SecondUser option[value='SiiCrypto.comUserD']").attr('disabled',false);
+	$("#SecondUser option[value='comUserA']").attr('disabled',false);
+	$("#SecondUser option[value='comUserB']").attr('disabled',false);	
+	$("#SecondUser option[value='comUserC']").attr('disabled',false);	
+	$("#SecondUser option[value='comUserD']").attr('disabled',false);
 	$("#SecondUser option[value='"+username+"']").attr('disabled','disabled');
 	$("#SecondUser option[value='"+username+"']").attr('selected',false);	
 	$("#FirstUserForm").attr('action','/API/Trade/'+eval(username));

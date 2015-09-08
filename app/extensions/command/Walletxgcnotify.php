@@ -49,7 +49,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 							'Transfer'=>$comment,
 						);							
 						$t->save($data);
-						$userName = str_replace("SiiCrypto-","",$username);
+						$userName = str_replace(COMPANY_SHORT."-","",$username);
 						$details = Details::find('first',
 							array('conditions'=>array('username'=> (string) $userName))
 						);

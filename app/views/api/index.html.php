@@ -2,7 +2,7 @@
 			<div class="page-header">
 				<h1>API Documentation</h1>
 			</div>
-		<h4>"<strong>SiiCrypto</strong>" supports two API's</h4>
+		<h4>"<strong><?=COMPANY_SHORT?></strong>" supports two API's</h4>
 		<ol>
 			<li><strong>Public access</strong>
 				<ul>
@@ -28,7 +28,7 @@
 			</div>
 			<h4 id="headings">List recent trades in each currency</h4>
 			<div class="bs-docs-example">
-				<p><a href="https://SiiCrypto.com/API/trades" target="_blank">https://SiiCrypto.com/API/trades</a></p>
+				<p><a href="https://<?=COMPANY_URL?>/API/trades" target="_blank">https://<?=COMPANY_URL?>/API/trades</a></p>
 				<pre>
 {
 	"success":1,
@@ -48,9 +48,9 @@
 			<h4 id="headings">List recent trades in each currency for a specific date</h4>
 			<p id="headings">If no date is specified, the result will include orders for today. The result includes all currencies, buy and sell, completed and pending.</p>
 			<div class="bs-docs-example">
-				<p><a href="https://SiiCrypto.com/API/tradesdate/" target="_blank">https://SiiCrypto.com/API/tradesdate/</a> This API function will output all orders for today.</p>
+				<p><a href="https://<?=COMPANY_URL?>/API/tradesdate/" target="_blank">https://<?=COMPANY_URL?>/API/tradesdate/</a> This API function will output all orders for today.</p>
 				<p><strong>Passing date in YYYY-MM-DD to the API will output data for that date.</strong></p>
- 				<p><a href="https://SiiCrypto.com/API/tradesdate/2013-10-02" target="_blank">https://SiiCrypto.com/API/tradesdate/YYYY-MM-DD</a> This API will output all data for 2nd October 2013.</p>
+ 				<p><a href="https://<?=COMPANY_URL?>/API/tradesdate/2013-10-02" target="_blank">https://<?=COMPANY_URL?>/API/tradesdate/YYYY-MM-DD</a> This API will output all data for 2nd October 2013.</p>
 				<pre>
 {
 	"success":1,
@@ -76,7 +76,7 @@
 		</ul>
 		You can find your API Key in Settings / Security tab.
 
-		<p>All request are sent to https://SiiCrypto.com/API/<strong>FunctionName</strong></p>
+		<p>All request are sent to https://<?=COMPANY_URL?>/API/<strong>FunctionName</strong></p>
 		<pre>All requests must also include a special <strong>nounce</strong> POST parameter with increment integer. (>0)
 The URL should include the key as a parameter.
 All other parameters should be submitted by POST method.
@@ -123,7 +123,7 @@ All server answers are in JSON format.
 		$key = "YOUR_API_KEY";
 		}
 		?>
-		URL: https://SiiCrypto.com/API/Info/<?=$key?>
+		URL: https://<?=COMPANY_URL?>/API/Info/<?=$key?>
 		<h5>Parameters:</h5>
 		<p>nounce: integer &gt; 0</p>
 		<?php 
@@ -188,7 +188,7 @@ All server answers are in JSON format.
 		$key = "YOUR_API_KEY";
 		}
 		?>
-		URL: https://SiiCrypto.com/API/Transactionhistory/<?=$key?>
+		URL: https://<?=COMPANY_URL?>/API/Transactionhistory/<?=$key?>
 		<h5>Parameters:</h5>
 		<table class="table table-condensed table-bordered table-hover" style="width:50% ">
 			<tr>
@@ -376,7 +376,7 @@ Currency: <select name="currency" class="span2">
 		$key = "YOUR_API_KEY";
 		}
 		?>
-		URL: https://SiiCrypto.com/API/Orderhistory/<?=$key?>
+		URL: https://<?=COMPANY_URL?>/API/Orderhistory/<?=$key?>
 		<h5>Parameters:</h5>
 		<table class="table table-condensed table-bordered table-hover" style="width:50% ">
 			<tr>
@@ -557,7 +557,7 @@ Currency: <select name="status" class="span2">
 		$key = "YOUR_API_KEY";
 		}
 		?>
-		URL: https://SiiCrypto.com/API/Orderlist/<?=$key?>
+		URL: https://<?=COMPANY_URL?>/API/Orderlist/<?=$key?>
 		<h5>Parameters:</h5>
 		<table class="table table-condensed table-bordered table-hover" style="width:50% ">
 			<tr>
@@ -742,7 +742,7 @@ Pair: <select name="pair" class="span2">
 		$key = "YOUR_API_KEY";
 		}
 		?>
-		URL: https://SiiCrypto.com/API/Trade/<?=$key?>
+		URL: https://<?=COMPANY_URL?>/API/Trade/<?=$key?>
 		<h5>Parameters:</h5>
 		<table class="table table-condensed table-bordered table-hover" style="width:50% ">
 			<tr>
@@ -886,7 +886,7 @@ Price: <input type="text" value="" placeholder="100.0" min="1" max="99999" name=
 		$key = "YOUR_API_KEY";
 		}
 		?>
-		URL: https://SiiCrypto.com/API/cancelorder/<?=$key?>
+		URL: https://<?=COMPANY_URL?>/API/cancelorder/<?=$key?>
 		<h5>Parameters:</h5>
 		<table class="table table-condensed table-bordered table-hover" style="width:50% ">
 			<tr>
